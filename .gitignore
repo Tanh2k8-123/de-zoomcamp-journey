@@ -1,0 +1,15 @@
+# Python and notebooks
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.parquet
+data/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+credentials.json
+*.tfvars.json
