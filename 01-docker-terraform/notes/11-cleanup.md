@@ -1,0 +1,8 @@
+- Containers, images, volumes, and networks are separate Docker resources.
+- 'docker compose down' stops and removes Compose containers but keeps named volumes.
+- 'docker compose down -v' removes volumes too, which deletes database data.
+- 'docker container prune' removes stopped containers.
+- 'docker rmi' removes unused images.
+- 'docker volume rm' removes specific volumes.
+- 'docker network rm' removes unused networks.
+- Cleanup is a core data-engineering skill to prevent disk bloat and confusing duplicate resources.
