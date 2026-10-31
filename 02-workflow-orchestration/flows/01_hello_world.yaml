@@ -1,0 +1,8 @@
+id: hello_world
+namespace: de_zoomcamp_2027
+description: First Kestra workflow
+
+tasks:
+  - id: say_hello
+    type: io.kestra.plugin.core.log.Log
+    message: Hello from Kestra execution {{execution.id}}
