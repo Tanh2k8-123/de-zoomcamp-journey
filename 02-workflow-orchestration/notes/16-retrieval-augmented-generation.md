@@ -3,8 +3,8 @@
 This is a bonus AI unit and requires Gemini API access. Reference flows are stored under:
 
 ```text
-flows/ai/10_chat_without_rag.yaml
-flows/ai/11_chat_with_rag.yaml
+flows/10_chat_without_rag.yaml
+flows/11_chat_with_rag.yaml
 ```
 
 ## RAG concept

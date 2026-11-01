@@ -36,7 +36,7 @@ This secret contains the service account JSON key. Never commit this JSON file t
 Reference flow:
 
 ```text
-flows/gcp/07_gcp_setup.yaml
+flows/07_gcp_setup.yaml
 ```
 
 It creates:

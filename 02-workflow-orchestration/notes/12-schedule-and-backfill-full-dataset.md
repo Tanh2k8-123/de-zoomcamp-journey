@@ -3,7 +3,7 @@
 This unit requires working GCP credentials. Reference flow:
 
 ```text
-flows/gcp/09_gcp_taxi_scheduled.yaml
+flows/09_gcp_taxi_scheduled.yaml
 ```
 
 ## Key idea

@@ -43,7 +43,7 @@ These are documented and flow files are copied, but not executed:
    ```
 6. Run:
    ```text
-   flows/gcp/07_gcp_setup.yaml
-   flows/gcp/08_gcp_taxi.yaml
-   flows/gcp/09_gcp_taxi_scheduled.yaml
+   flows/07_gcp_setup.yaml
+   flows/08_gcp_taxi.yaml
+   flows/09_gcp_taxi_scheduled.yaml
    ```

@@ -2,9 +2,9 @@
 
 This folder contains the Kestra flow files used for learning.
 
-## Local flows
+## Local runnable flows
 
-These can be run once Kestra and local Postgres are up:
+These can be run after starting the Module 2 Docker Compose stack:
 
 ```text
 01_hello_world.yaml
@@ -23,24 +23,24 @@ de_zoomcamp_2027
 
 ## GCP reference flows
 
-These require Google Cloud credentials, KV values, and BigQuery/GCS resources:
+These require Google Cloud credentials, Kestra KV values, and GCS/BigQuery resources:
 
 ```text
-gcp/06_gcp_kv.yaml
-gcp/07_gcp_setup.yaml
-gcp/08_gcp_taxi.yaml
-gcp/09_gcp_taxi_scheduled.yaml
+06_gcp_kv.yaml
+07_gcp_setup.yaml
+08_gcp_taxi.yaml
+09_gcp_taxi_scheduled.yaml
 ```
 
-Do not commit real service account JSON keys.
+Do not commit real service account JSON keys. Use Kestra Secrets and KV Store.
 
 ## AI reference flows
 
 These require Gemini API access:
 
 ```text
-ai/10_chat_without_rag.yaml
-ai/11_chat_with_rag.yaml
+10_chat_without_rag.yaml
+11_chat_with_rag.yaml
 ```
 
 Do not commit API keys.

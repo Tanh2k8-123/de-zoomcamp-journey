@@ -3,7 +3,7 @@
 This unit requires working GCP credentials. Reference flow:
 
 ```text
-flows/gcp/08_gcp_taxi.yaml
+flows/08_gcp_taxi.yaml
 ```
 
 ## Pipeline pattern
