@@ -1,7 +1,5 @@
 # Module 6 Unit 12 — Spark RDD mapPartition
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Optional: mapPartitions processes an iterator for each partition rather than initializing work per row.

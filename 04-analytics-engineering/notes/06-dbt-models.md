@@ -42,13 +42,13 @@ taxi_zone_lookup.csv -> taxi_zone_lookup -> dim_zones --+
 - Intermediate: combine, enrich, and apply reusable transformations.
 - Marts: serve business analysis with detailed facts, descriptive dimensions, and aggregate reports. A mart does not have to be aggregated.
 
-The existing `fct_monthly_zone_revenue` model belongs in marts/reporting: it groups trips by pickup zone, month, and service type. It was inspected, but not executed during this lesson.
+The existing `fct_monthly_zone_revenue` model belongs in marts/reporting: it groups trips by pickup zone, month, and service type.
 
 ## Union and intermediate transformations
 
 `int_trips_unioned` reads both staging models and uses `UNION ALL` to append rows without removing duplicates. Both sides select corresponding columns in the same order with compatible types. The model adds a Green/Yellow `service_type` label and supplies defaults for fields absent from the yellow source.
 
-Observed output:
+Example row counts for the January development dataset:
 
 ```text
 Green:    630,830
@@ -94,7 +94,7 @@ where trips.pickup_datetime > (select max(pickup_datetime) from {{ this }})
 - `fct_trips` LEFT JOINs `dim_zones` twice: once for pickup, once for dropoff.
 - Unique dimension keys prevent one matching trip from multiplying into several output rows.
 
-## Commands practiced (WSL / Bash)
+## Commands (WSL / Bash)
 
 ```bash
 cd /mnt/e/TuanAnh/Project/de-zoomcamp-2027/04-analytics-engineering/taxi_rides_ny
@@ -114,11 +114,11 @@ dbt run --select fct_trips
 dbt test --select fct_trips
 ```
 
-Upstream models already existed when running the individual downstream models without `+`.
+Create upstream models before running individual downstream models without `+`.
 
 ## Test selection issue
 
-The initial `dbt test --select dim_zones` selected four tests: its two own column checks and two relationships checks referencing both `fct_trips` and `dim_zones`. The relationships checks errored because `fct_trips` had not been created.
+`dbt test --select dim_zones` can select its two column checks and two relationships checks referencing both `fct_trips` and `dim_zones`. If `fct_trips` does not exist yet, the relationships checks error.
 
 Default eager indirect selection can include a test when any parent is selected. Cautious selection requires all of the test's parents to be selected:
 
@@ -126,29 +126,15 @@ Default eager indirect selection can include a test when any parent is selected.
 dbt test --select dim_zones --indirect-selection cautious
 ```
 
-This ran just the two dimension checks successfully. After `fct_trips` was created, both relationships checks also passed.
+This selects just the two dimension checks. Create `fct_trips` before running the relationships checks.
 
 - FAIL: a test query executes and finds violating data.
 - ERROR in this case: the test query cannot execute because a required table is missing.
 
 Reference: [dbt test selection](https://docs.getdbt.com/reference/node-selection/test-selection-examples).
 
-## Verification shared by the learner
-
-Environment: dbt Core `1.12.6`, DuckDB adapter `1.11.1`, target `dev`.
-
-| Step | Observed result |
-| --- | --- |
-| Run +int_trips_unioned | PASS=3: two views and one table |
-| Seed payment_type_lookup | PASS=1, 7 rows inserted |
-| Run int_trips | PASS=1 |
-| Test int_trips | PASS=7 |
-| Test dim_zones with cautious selection | PASS=2 |
-| Run fct_trips | PASS=1 |
-| Test fct_trips | PASS=9, including both zone relationships checks |
+## Data quality considerations
 
 The fact tests check key uniqueness, required non-null fields, service type values, and relationships for non-null location IDs. Passing these tests does not establish that every business value is correct.
 
-The fact run emitted a warning about numeric columns without explicit precision/scale. It completed successfully, but the warning remains unresolved: current tests do not verify rounding or preservation of numeric values. No numeric type changes were made in this lesson.
-
-`dim_vendors` and the monthly revenue reporting model already exist in the repo but were not run during this lesson. The core learning scope covered source/model references, dependency order, seeds, materializations, and staging -> intermediate -> marts.
+Numeric columns without explicit precision/scale can produce a rounding warning. The current data tests do not verify rounding or preservation of numeric values; review numeric types separately.

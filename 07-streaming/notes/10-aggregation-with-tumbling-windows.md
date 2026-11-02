@@ -1,7 +1,5 @@
 # Module 7 Unit 10 — Aggregation with tumbling windows
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - A tumbling window is fixed-size and non-overlapping. Group by window and location to compute counts and revenue.

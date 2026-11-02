@@ -1,7 +1,5 @@
 # Module 4 Unit 9 — dbt Tests
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Data tests query for violations: zero failing rows normally means PASS. Generic tests are reusable; singular tests express a specific rule in SQL.

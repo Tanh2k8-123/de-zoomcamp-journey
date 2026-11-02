@@ -1,9 +1,5 @@
 # Module 4 — Analytics Engineering
 
-## Learning status
-
-Units 1–6 completed at core scope; Unit 7 in progress; Units 8–11 prepared for later study.
-
 ## Notes
 
 - [Module 4 Unit 1 - Analytics Engineering Basics](notes/01-analytics-engineering-basics.md)
@@ -26,4 +22,4 @@ Focus: tools, core concepts, architecture, and preparation for a final project. 
 
 ## Source
 
-Notes summarize the [DataTalksClub course snapshot](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/04-analytics-engineering) at `8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e`. They are study material, not completion evidence.
+Notes summarize the [DataTalksClub course snapshot](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/04-analytics-engineering) at `8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e`.

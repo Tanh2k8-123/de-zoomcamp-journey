@@ -1,7 +1,5 @@
 # Module 6 Unit 14 — Creating a Local Spark Cluster
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - A standalone master coordinates workers; workers host executors for submitted applications.

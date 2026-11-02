@@ -1,7 +1,5 @@
 # Module 7 Unit 8 — The pass-through Flink job
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - The pass-through job declares Kafka input and a JDBC sink, then inserts converted events into PostgreSQL.

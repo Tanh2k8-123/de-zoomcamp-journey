@@ -1,7 +1,5 @@
 # Module 4 Unit 10 — dbt Packages
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - A package distributes reusable dbt macros, tests, or models. This project declares dbt_utils and codegen in packages.yml.
@@ -12,7 +10,7 @@ Status: Prepared study notes; not yet practiced in this learning repo.
 ## Practice plan
 
 1. Inspect packages.yml, package-lock.yml, and the package macro call in int_trips.sql.
-2. Run dbt deps when needed and compile int_trips to inspect the expanded expression. No package upgrade is required for this lesson.
+2. Run dbt deps when needed and compile int_trips to inspect the expanded expression. Keep package upgrades separate from routine dependency installation.
 
 ## Understanding check
 

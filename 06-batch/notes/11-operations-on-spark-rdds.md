@@ -1,7 +1,5 @@
 # Module 6 Unit 11 — Operations on Spark RDDs
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Optional: RDDs expose lower-level distributed collections with map, filter, and reduceByKey.

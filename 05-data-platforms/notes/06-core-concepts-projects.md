@@ -1,7 +1,5 @@
 # Module 5 Unit 6 — Core Concepts: Projects
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - A project is the container for environments, connections, and one or more pipelines.

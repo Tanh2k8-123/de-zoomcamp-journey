@@ -1,7 +1,5 @@
 # Module 6 Unit 2 — Introduction to Spark
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Spark is a distributed processing engine; PySpark exposes its APIs to Python.

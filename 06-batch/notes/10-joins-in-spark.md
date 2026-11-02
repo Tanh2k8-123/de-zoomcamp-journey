@@ -1,7 +1,5 @@
 # Module 6 Unit 10 — Joins in Spark
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Large joins often shuffle both sides by join key; broadcast joins can distribute a sufficiently small lookup to executors.

@@ -1,7 +1,5 @@
 # Module 7 Unit 9 — Offsets - earliest vs latest
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Offsets identify positions within partitions. Startup/reset behavior and checkpoint recovery are separate mechanisms.

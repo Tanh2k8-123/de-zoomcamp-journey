@@ -1,8 +1,6 @@
 # Local Bruin working project
 
-Status: synthetic starter prepared for Module 5. This is not the complete course taxi downloader. Bruin CLI validation/execution has not yet been performed.
-
-Preparation check: the CSV and both SQL transformations were executed independently in an in-memory DuckDB database and produced the expected report below. This does not replace Bruin CLI validation.
+A synthetic starter using local DuckDB. The full NYC taxi downloader can be added separately.
 
 ## Architecture
 

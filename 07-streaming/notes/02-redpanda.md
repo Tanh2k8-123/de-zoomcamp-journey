@@ -1,7 +1,5 @@
 # Module 7 Unit 2 — Redpanda - a Kafka-compatible broker
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Redpanda exposes Kafka-compatible APIs for producers and consumers.

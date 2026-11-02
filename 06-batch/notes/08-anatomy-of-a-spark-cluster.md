@@ -1,7 +1,5 @@
 # Module 6 Unit 8 — Anatomy of a Spark Cluster
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - The driver plans work and coordinates execution; executors run tasks and store partition data.

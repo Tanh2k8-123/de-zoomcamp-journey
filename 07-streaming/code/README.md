@@ -1,6 +1,6 @@
 # Streaming working project
 
-Status: course code prepared for study. Containers, producers, and Flink jobs have not been run during preparation. Connector/runtime compatibility needs an actual build and job submission later.
+A local workshop using course-derived code. Validate connector/runtime compatibility when building and submitting jobs.
 
 Architecture: producer -> Redpanda -> Python consumer or Flink -> PostgreSQL.
 

@@ -1,7 +1,5 @@
 # Module 6 Unit 16 — Connecting Spark to BigQuery
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Reference-only: a compatible Spark BigQuery connector handles warehouse reads/writes.

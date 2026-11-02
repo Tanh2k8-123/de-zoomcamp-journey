@@ -1,12 +1,10 @@
 # Module 5 Unit 5 — Deploying to Bruin Cloud
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Managed execution moves scheduling and monitoring away from the developer machine while retaining code-driven pipelines.
 - Deployment involves a repository, runtime connections, environments, and permissions.
-- Cloud availability, limits, and pricing need a fresh check before choosing it for the final project; no deployment has been performed.
+- Check cloud availability, limits, and pricing before choosing it for the final project.
 
 ## Practice plan
 

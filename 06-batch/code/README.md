@@ -5,7 +5,7 @@
 - course_reference/: original course scripts; inspect paths, API versions, and overwrite modes before using.
 - ../notebooks/: course notebooks with outputs and execution counts cleared; homework excluded.
 
-Read ../setup/README.md first. Runtime Spark jobs have not been executed as part of preparation.
+Read ../setup/README.md first.
 
 From the module root in WSL:
 

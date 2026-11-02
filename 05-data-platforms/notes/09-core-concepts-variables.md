@@ -1,7 +1,5 @@
 # Module 5 Unit 9 — Core Concepts: Variables
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Runtime variables let the same pipeline process different dates or parameters without editing code.

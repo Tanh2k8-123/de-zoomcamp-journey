@@ -1,7 +1,5 @@
 # Module 6 Unit 5 — Spark DataFrames
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - select, filter, and withColumn build lazy transformations; show, count, and writes trigger execution.

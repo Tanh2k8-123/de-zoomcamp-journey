@@ -1,7 +1,5 @@
 # Module 5 Unit 10 — Core Concepts: Commands
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - validate checks definitions; lineage displays dependency relationships; run executes selected work; query inspects database results.

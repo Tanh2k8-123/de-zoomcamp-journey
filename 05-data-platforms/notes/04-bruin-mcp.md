@@ -1,7 +1,5 @@
 # Module 5 Unit 4 — Using Bruin MCP with AI Agents
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - MCP exposes Bruin capabilities to a compatible AI client; it is an interface, not a separate storage engine.

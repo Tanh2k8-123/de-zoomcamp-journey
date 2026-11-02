@@ -1,7 +1,5 @@
 # Module 7 Unit 6 — Why Flink?
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Flink supplies stateful processing, event-time windows, parallelism, and checkpoint coordination.

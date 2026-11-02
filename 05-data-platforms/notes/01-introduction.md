@@ -1,11 +1,9 @@
 # Module 5 Unit 1 — Introduction to Bruin
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Bruin combines ingestion, transformation, orchestration, checks, and lineage around a graph of assets.
-- Compare its scope with Kestra orchestration and dbt transformations already studied; overlapping features do not make the tools identical.
+- Compare its scope with Kestra orchestration and dbt transformations; overlapping features do not make the tools identical.
 - Keep extraction, staging, and business reports as separate responsibilities even when one platform executes all three.
 
 ## Practice plan

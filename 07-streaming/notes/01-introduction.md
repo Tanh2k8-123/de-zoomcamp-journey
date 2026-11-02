@@ -1,7 +1,5 @@
 # Module 7 Unit 1 — PyFlink: Stream Processing Workshop
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - The workshop connects taxi events through a Kafka-compatible broker to Python consumers and Flink, then PostgreSQL.

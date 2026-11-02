@@ -1,7 +1,5 @@
 # Module 7 Unit 3 — Produce messages to Kafka
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - A producer serializes ride fields into bytes and sends records to a topic.

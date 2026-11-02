@@ -1,7 +1,5 @@
 # Module 7 Unit 12 — Understanding window types
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Tumbling: fixed size, no overlap; suitable for one summary per interval.

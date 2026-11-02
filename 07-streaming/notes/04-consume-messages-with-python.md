@@ -1,7 +1,5 @@
 # Module 7 Unit 4 — Consume messages with Python
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - A consumer deserializes records and advances through topic-partition offsets.

@@ -1,7 +1,5 @@
 # Module 4 Unit 8 — Documentation
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Document sources, models, columns, seeds, and macros in YAML using names that match project resources.

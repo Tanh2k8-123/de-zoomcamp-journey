@@ -1,7 +1,5 @@
 # Module 5 Unit 7 — Core Concepts: Pipelines
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - A pipeline groups assets with a shared schedule and configuration.

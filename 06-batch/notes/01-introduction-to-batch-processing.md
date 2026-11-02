@@ -1,7 +1,5 @@
 # Module 6 Unit 1 — Introduction to Batch Processing
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Batch processes a bounded collection on a schedule or trigger; streaming processes an ongoing sequence.

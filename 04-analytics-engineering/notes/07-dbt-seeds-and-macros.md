@@ -1,7 +1,5 @@
 # Module 4 Unit 7 — dbt Seeds and Macros
 
-Status: In progress: seed behavior reviewed; macro walkthrough and execution remain pending.
-
 ## Core ideas
 
 - Seeds load small CSV lookup files into warehouse tables. Editing CSV does not update a loaded table until dbt seed runs again.

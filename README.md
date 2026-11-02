@@ -11,4 +11,4 @@ Documenting my Data Engineering Zoomcamp journey through hands-on exercises, pro
 - [06 — Batch Processing](06-batch/README.md)
 - [07 — Streaming](07-streaming/README.md)
 
-See [learning progress](LEARNING_PROGRESS.md) for completed work and material prepared for future study. Each new module separates `notes/` from its working project/code directory. Commands target WSL/Bash; cloud-only units remain reference material until a suitable environment is available.
+Each new module separates `notes/` from its working project/code directory. Commands target WSL/Bash; cloud-only units remain reference material until a suitable environment is available.

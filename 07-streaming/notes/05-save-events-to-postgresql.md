@@ -1,7 +1,5 @@
 # Module 7 Unit 5 — Save events to PostgreSQL
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - A database consumer turns events into persistent rows with parameterized INSERTs.

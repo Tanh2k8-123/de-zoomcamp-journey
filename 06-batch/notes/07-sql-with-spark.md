@@ -1,7 +1,5 @@
 # Module 6 Unit 7 — SQL with Spark
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Register a DataFrame as a temporary view, then express aggregation in Spark SQL.

@@ -1,7 +1,5 @@
 # Module 7 Unit 7 — The Flink image and services
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - JobManager coordinates jobs; TaskManagers execute work. The image includes Python and connector libraries.

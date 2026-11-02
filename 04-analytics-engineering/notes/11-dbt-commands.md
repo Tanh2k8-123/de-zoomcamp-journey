@@ -1,7 +1,5 @@
 # Module 4 Unit 11 — dbt Commands
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - debug checks configuration/connectivity; deps installs packages; compile renders executable SQL without materializing models.

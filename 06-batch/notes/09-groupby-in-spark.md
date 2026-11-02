@@ -1,7 +1,5 @@
 # Module 6 Unit 9 — GroupBy in Spark
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Grouping typically performs partial aggregation, shuffles by key, and combines results.

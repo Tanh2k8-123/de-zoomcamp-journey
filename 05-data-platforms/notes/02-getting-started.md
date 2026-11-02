@@ -1,7 +1,5 @@
 # Module 5 Unit 2 — Getting Started with Bruin
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Develop in WSL with the Bruin CLI. Check the installed version and CLI help before following flags from a course snapshot.

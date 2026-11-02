@@ -1,7 +1,5 @@
 # Module 5 Unit 8 — Core Concepts: Assets
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - An asset combines metadata, executable content, and dependencies. Examples include SQL, Python, and seed assets.

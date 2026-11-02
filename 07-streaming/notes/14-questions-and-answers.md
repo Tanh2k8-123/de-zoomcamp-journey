@@ -1,7 +1,5 @@
 # Module 7 Unit 14 — Q&A
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Recovery requires usable state/checkpoints, source retention, and compatible sink behavior.

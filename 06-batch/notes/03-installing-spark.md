@@ -1,7 +1,5 @@
 # Module 6 Unit 3 — Installing Spark
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Java, Python, Spark, and connectors must be compatible; old course commands are not a version guarantee.

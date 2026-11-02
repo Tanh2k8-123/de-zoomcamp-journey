@@ -1,9 +1,5 @@
 # Module 6 — Batch Processing
 
-## Learning status
-
-Prepared for future study. No module pipeline execution or cloud deployment is claimed.
-
 ## Notes
 
 - [Module 6 Unit 1 — Introduction to Batch Processing](notes/01-introduction-to-batch-processing.md)
@@ -31,4 +27,4 @@ Focus: tools, core concepts, architecture, and preparation for a final project. 
 
 ## Source
 
-Notes summarize the [DataTalksClub course snapshot](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/06-batch) at `8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e`. They are study material, not completion evidence.
+Notes summarize the [DataTalksClub course snapshot](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/06-batch) at `8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e`.

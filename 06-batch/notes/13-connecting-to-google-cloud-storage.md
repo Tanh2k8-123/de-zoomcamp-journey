@@ -1,7 +1,5 @@
 # Module 6 Unit 13 — Connecting to Google Cloud Storage
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Reference-only without GCP access: Spark needs a compatible storage connector and credentials for gs:// paths.

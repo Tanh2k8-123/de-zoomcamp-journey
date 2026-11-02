@@ -89,15 +89,9 @@ con.close()
 PY
 ```
 
-## Verification during the lesson
+## Data checks
 
-- Learner reported successful compilation and model execution.
-- Shared test output: dbt Core `1.12.6`, DuckDB adapter `1.11.1`, target `dev`.
-- `not_null_stg_green_tripdata_pickup_datetime`: PASS.
-- `not_null_stg_green_tripdata_vendor_id`: PASS.
-- Summary: `PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2`.
-
-dbt found 33 data tests across the project, but the model selection ran only these two. A `not_null` check finds rows with NULL in the tested column; zero violating rows means PASS. These results cover the selected dev model and conditions, not every quality rule or all raw data.
+The staging model declares `not_null` checks for `vendor_id` and `pickup_datetime`. A check finds rows with NULL in the tested column; zero violating rows means PASS. These checks cover the selected model and conditions, not every quality rule or all raw data.
 
 ## Next unit
 

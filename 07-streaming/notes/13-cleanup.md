@@ -1,7 +1,5 @@
 # Module 7 Unit 13 — Cleanup
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Stop submitted jobs and local services when finished.

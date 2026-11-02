@@ -1,7 +1,5 @@
 # Module 5 Unit 3 — Building an End-to-End Pipeline with NYC Taxi Data
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - The course taxi pipeline separates Python ingestion, SQL cleaning/lookup joins, and aggregate reports.

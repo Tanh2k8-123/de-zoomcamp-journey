@@ -1,7 +1,5 @@
 # Module 6 Unit 4 — First Look at Spark/PySpark
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Create a SparkSession, read data, inspect schema, and write a result.

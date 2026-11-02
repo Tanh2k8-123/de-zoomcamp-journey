@@ -1,7 +1,5 @@
 # Local setup plan (WSL)
 
-Status: prepared, not installed or executed during scaffolding.
-
 Use Python 3.12 and Java 17 with the pinned PySpark 3.5.3 learning environment. Ensure JAVA_HOME points to that JDK in WSL; Windows Java settings do not automatically configure WSL.
 
 ```bash

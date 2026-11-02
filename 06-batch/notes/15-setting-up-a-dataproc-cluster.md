@@ -1,12 +1,10 @@
 # Module 6 Unit 15 — Setting up a Dataproc Cluster
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Reference-only: Dataproc provides managed Spark cluster infrastructure on GCP.
 - Cluster creation, job submission, storage, permissions, and cleanup are distinct concerns.
-- No cloud resources were created. Check current product limits and costs before any later deployment.
+- Check current product limits and costs before deployment.
 
 ## Practice plan
 

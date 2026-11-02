@@ -1,7 +1,5 @@
 # Module 7 Unit 11 — Late events and upserts
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Out-of-order events may arrive after newer event timestamps. Whether they are late depends on watermark progress, not just wall-clock delay.

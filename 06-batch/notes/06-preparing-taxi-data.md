@@ -1,7 +1,5 @@
 # Module 6 Unit 6 — Preparing Yellow and Green Taxi Data
 
-Status: Prepared study notes; not yet practiced in this learning repo.
-
 ## Core ideas
 
 - Optional preparation: obtain a small subset before downloading many months.
