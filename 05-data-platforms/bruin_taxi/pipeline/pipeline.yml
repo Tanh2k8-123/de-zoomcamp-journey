@@ -1,0 +1,5 @@
+name: local_taxi_learning
+schedule: daily
+start_date: "2025-01-01"
+default_connections:
+  duckdb: duckdb-default

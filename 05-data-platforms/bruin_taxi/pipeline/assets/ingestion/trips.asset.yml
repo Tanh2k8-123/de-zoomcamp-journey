@@ -1,0 +1,16 @@
+name: ingestion.trips
+type: duckdb.seed
+parameters:
+  path: sample_trips.csv
+columns:
+  - name: trip_id
+    type: integer
+    checks:
+      - name: unique
+      - name: not_null
+  - name: pickup_datetime
+    type: timestamp
+  - name: pickup_location_id
+    type: integer
+  - name: total_amount
+    type: double
