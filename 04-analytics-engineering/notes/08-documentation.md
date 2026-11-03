@@ -1,21 +1,10 @@
-# Module 4 Unit 8 — Documentation
+# Module 4 Unit 8 - Documentation
 
-## Core ideas
-
-- Document sources, models, columns, seeds, and macros in YAML using names that match project resources.
-- Describe the grain, business meaning, units, filters, and limitations, rather than only repeating column names.
-- docs generate collects artifacts and database catalog metadata; docs serve displays them locally. A declared data_type alone is different from an enforced model contract.
-
-## Practice plan
-
-1. Read models/marts/schema.yml and macros/macros_properties.yml.
-2. Run dbt docs generate, then dbt docs serve --port 8085; browse lineage and a model description. Stop the server with Ctrl+C.
-
-## Understanding check
-
-Why can a model be technically correct but still hard for an analyst to use?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/04-analytics-engineering/08-documentation.md)
-- [Lesson video](https://www.youtube.com/watch?v=UqoWyMjcqrA)
+- Sources, models, columns, seeds, and macros are documented in YAML using names that match project resources.
+- Useful descriptions state the grain, business meaning, units, filters, and limitations instead of repeating column names.
+- `dbt docs generate` collects run artifacts and database catalog metadata, and `dbt docs serve` displays them locally.
+- The site reflects the artifacts of the most recent successful generate, so stale docs can hide newer model changes.
+- A declared `data_type` is documentation metadata, which differs from an enforced model contract.
+- Documenting the grain tells an analyst how many rows represent one real trip and whether measures can be summed safely.
+- Recording filters and exclusions prevents an analyst from treating a deliberately partial model as complete warehouse data.
+- Docs are the handoff surface to analysts, so a technically correct model can still be hard to use without them.

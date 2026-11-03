@@ -1,21 +1,9 @@
-# Module 6 Unit 6 — Preparing Yellow and Green Taxi Data
+# Module 6 Unit 6 - Preparing Yellow and Green Taxi Data
 
-## Core ideas
-
-- Optional preparation: obtain a small subset before downloading many months.
-- Normalize green and yellow timestamp names and align schemas before unioning.
-- Parquet preserves types and supports column-oriented access; choose partitions and file sizes deliberately.
-
-## Practice plan
-
-1. Inspect the course-derived 05_taxi_schema notebook under ../notebooks/.
-2. Use separate data/ paths for batch practice; do not overwrite the Module 4 DuckDB database.
-
-## Understanding check
-
-Why normalize schemas before combining green and yellow data?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/06-batch/06-preparing-taxi-data.md)
-- [Lesson video](https://www.youtube.com/watch?v=CI3P4tAtru4)
+- Preparing the taxi data is optional and only needs a small subset of months.
+- Green and yellow taxi files name their timestamp columns differently.
+- Schemas must be renamed and aligned before the two sources are unioned.
+- Unioning mismatched schemas silently yields misaligned or null columns.
+- Parquet preserves column types and stores data column-oriented for selective reads.
+- Partition layout and file size should be chosen deliberately for the query patterns.
+- Too many partitions create small files, while too few limit parallelism.

@@ -1,22 +1,11 @@
-# Module 4 Unit 10 — dbt Packages
+# Module 4 Unit 10 - dbt Packages
 
-## Core ideas
-
-- A package distributes reusable dbt macros, tests, or models. This project declares dbt_utils and codegen in packages.yml.
-- dbt deps installs dependencies. Commit packages.yml and package-lock.yml; ignore the downloaded dbt_packages directory.
-- int_trips uses dbt_utils.generate_surrogate_key. A hash does not guarantee that the selected business fields identify distinct real-world trips.
-- Review adapter and dbt version compatibility before changing package constraints; hub listing alone is not a security guarantee.
-
-## Practice plan
-
-1. Inspect packages.yml, package-lock.yml, and the package macro call in int_trips.sql.
-2. Run dbt deps when needed and compile int_trips to inspect the expanded expression. Keep package upgrades separate from routine dependency installation.
-
-## Understanding check
-
-Why commit a lockfile but not the downloaded package directory?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/04-analytics-engineering/10-dbt-packages.md)
-- [Lesson video](https://www.youtube.com/watch?v=KfhUA9Kfp8Y)
+- A package distributes reusable dbt macros, generic tests, or models for other projects to install.
+- `dbt deps` installs the packages declared in `packages.yml` into the downloaded `dbt_packages` directory.
+- Commit `packages.yml` and `package-lock.yml`, but ignore the downloaded package directory.
+- The lockfile pins resolved versions so every environment installs identical code, while the download is reproducible build output.
+- This project declares `dbt_utils` and `codegen`.
+- `int_trips` calls `dbt_utils.generate_surrogate_key`, and the expanded expression is only visible after compilation.
+- A hashed surrogate key is consistent for its input fields but does not prove those fields identify distinct real-world trips.
+- Review adapter and dbt version compatibility before changing package constraints, because a hub listing is not a security guarantee.
+- Routine dependency installation and deliberate version upgrades should stay as separate changes.

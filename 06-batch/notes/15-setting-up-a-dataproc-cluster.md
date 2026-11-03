@@ -1,21 +1,9 @@
-# Module 6 Unit 15 — Setting up a Dataproc Cluster
+# Module 6 Unit 15 - Setting up a Dataproc Cluster
 
-## Core ideas
-
-- Reference-only: Dataproc provides managed Spark cluster infrastructure on GCP.
+- Dataproc provides managed Spark cluster infrastructure on Google Cloud.
 - Cluster creation, job submission, storage, permissions, and cleanup are distinct concerns.
-- Check current product limits and costs before deployment.
-
-## Practice plan
-
-1. Diagram local script -> object storage -> managed cluster -> output.
-2. List required permissions and teardown steps without executing cloud commands.
-
-## Understanding check
-
-Which operational work does a managed cluster remove, and which data responsibilities remain?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/06-batch/15-setting-up-a-dataproc-cluster.md)
-- [Lesson video](https://www.youtube.com/watch?v=osAiAYahvh8)
+- A managed service absorbs node provisioning and ongoing cluster upkeep.
+- Data grain, schema, and output correctness remain the pipeline owner's responsibility.
+- Product limits and costs change, so they must be verified before deployment.
+- Compute and storage lifetimes are independent, so outputs outlive the cluster.
+- These notes treat Dataproc as reference-only, since no cloud resources are provisioned.

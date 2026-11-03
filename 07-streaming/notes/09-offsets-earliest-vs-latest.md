@@ -1,20 +1,9 @@
-# Module 7 Unit 9 — Offsets - earliest vs latest
+# Module 7 Unit 9 - Offsets - Earliest vs Latest
 
-## Core ideas
-
-- Offsets identify positions within partitions. Startup/reset behavior and checkpoint recovery are separate mechanisms.
-- earliest can replay retained history; latest starts at the current end when that startup mode applies.
-- A valid committed offset can take precedence over auto_offset_reset for a Python consumer.
-
-## Practice plan
-
-1. Compare the source options in pass_through_job.py and aggregation_job.py.
-2. Predict behavior before starting a new consumer group versus restarting an existing one.
-
-## Understanding check
-
-Does changing auto_offset_reset always rewind an existing group?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/07-streaming/09-offsets-earliest-vs-latest.md)
+- Offsets identify record positions within each partition of a topic.
+- Startup and reset behavior and checkpoint recovery are separate mechanisms in a streaming job.
+- The earliest mode lets a consumer replay whatever history the broker still retains.
+- The latest mode starts reading at the current end of the partition when that startup mode applies.
+- A valid committed offset takes precedence over `auto_offset_reset` for a Python consumer.
+- Changing `auto_offset_reset` does not rewind an existing group that already has committed offsets.
+- Retention limits replay, because records past the retention window are no longer available to read.

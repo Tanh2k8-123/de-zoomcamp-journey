@@ -1,21 +1,9 @@
-# Module 5 Unit 8 — Core Concepts: Assets
+# Module 5 Unit 8 - Core Concepts: Assets
 
-## Core ideas
-
-- An asset combines metadata, executable content, and dependencies. Examples include SQL, Python, and seed assets.
-- Materialization determines how results are stored or replaced; checks describe conditions expected of the output.
-- The starter uses explicit depends entries and @bruin comment metadata. Do not mix illustrative decorator syntax into executable SQL.
-
-## Practice plan
-
-1. Read the seed YAML and the @bruin metadata block in staging/trips.sql.
-2. Identify each asset name, type, dependency, and resulting table.
-
-## Understanding check
-
-What is the difference between an asset definition and its SQL query body?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/05-data-platforms/08-core-concepts-assets.md)
-- [Lesson video](https://www.youtube.com/watch?v=ZElY5SoqrwI)
+- An asset combines metadata, executable content, and its declared dependencies.
+- SQL, Python, and seed files are all examples of asset types.
+- Materialization determines how results are stored or replaced in the target.
+- Checks describe the conditions the produced output is expected to satisfy.
+- The starter uses explicit `depends` entries and a `@bruin` comment metadata block.
+- Illustrative decorator syntax must not be mixed into executable SQL.
+- An asset definition says what the asset is, while its query body only computes the result.

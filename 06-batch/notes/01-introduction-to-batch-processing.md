@@ -1,21 +1,8 @@
-# Module 6 Unit 1 — Introduction to Batch Processing
+# Module 6 Unit 1 - Introduction to Batch Processing
 
-## Core ideas
-
-- Batch processes a bounded collection on a schedule or trigger; streaming processes an ongoing sequence.
-- Batch trades freshness for simpler scheduling and often better throughput. A rerun must have a defined output behavior.
-- A batch architecture includes inputs, transformations, outputs, orchestration, and observability.
-
-## Practice plan
-
-1. Describe a daily taxi revenue report: input interval, output grain, and rerun behavior.
-2. Start with the small local examples in ../code/README.md rather than a full dataset.
-
-## Understanding check
-
-When is a daily batch report sufficient instead of a streaming job?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/06-batch/01-introduction-to-batch-processing.md)
-- [Lesson video](https://www.youtube.com/watch?v=dcHe5Fl3MF8)
+- Batch processing runs a bounded, finite dataset on a schedule or an explicit trigger.
+- Streaming processes an unbounded, ongoing sequence of events as they arrive.
+- Batch trades data freshness for simpler scheduling and usually higher throughput.
+- Rerunning a batch window must have a defined, repeatable output behavior.
+- A batch architecture covers inputs, transformations, outputs, orchestration, and observability.
+- Daily reports and historical backfills suit batch, while latency-sensitive decisions need streaming.

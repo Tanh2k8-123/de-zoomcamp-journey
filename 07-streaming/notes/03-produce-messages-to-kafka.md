@@ -1,20 +1,9 @@
-# Module 7 Unit 3 — Produce messages to Kafka
+# Module 7 Unit 3 - Produce Messages to Kafka
 
-## Core ideas
-
-- A producer serializes ride fields into bytes and sends records to a topic.
-- The course producer reads a monthly Parquet file then emits 1,000 rows; head(1000) does not guarantee a tiny download.
-- flush waits for pending sends; delivery guarantees also depend on acknowledgment/retry settings.
-
-## Practice plan
-
-1. Inspect src/models.py and src/producers/producer.py before running it.
-2. Start the broker, then run uv run python src/producers/producer.py from ../code.
-
-## Understanding check
-
-Why must producers and consumers agree on timestamp units and payload schema?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/07-streaming/03-produce-messages-to-kafka.md)
+- A producer serializes ride fields into bytes and sends the records to a topic.
+- The course producer reads a monthly Parquet file and emits 1,000 rows per run.
+- Taking the first 1,000 rows does not guarantee a small download, because the file may still be fetched in full.
+- The flush call waits for pending sends to finish before the producer continues.
+- Delivery guarantees depend on acknowledgment and retry settings, not on flush alone.
+- Producers and consumers must agree on timestamp units and payload schema or event-time logic misreads records.
+- Records sharing a key go to the same partition, which keeps their order inside that partition.

@@ -1,21 +1,9 @@
-# Module 6 Unit 3 — Installing Spark
+# Module 6 Unit 3 - Installing Spark
 
-## Core ideas
-
-- Java, Python, Spark, and connectors must be compatible; old course commands are not a version guarantee.
-- Use WSL consistently for environment paths and execution. Inspect java -version and the actual PySpark version.
-- The learning starter declares PySpark 3.5.3 with Python >=3.10,<3.13; its upstream reference files may use older APIs.
-
-## Practice plan
-
-1. Follow ../setup/README.md, then run the small demo.
-2. Open the Spark UI while a job is running if needed; do not assume the UI remains available after spark.stop().
-
-## Understanding check
-
-Why can having Python installed still leave Spark unable to start?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/06-batch/03-installing-spark.md)
-- [Lesson video](https://www.youtube.com/watch?v=hqUbB9c8sKg)
+- Java, Python, Spark, and connectors all have to be mutually compatible.
+- Old course installation commands are not a guarantee that versions still work.
+- Having Python installed does not start Spark, because the JVM still requires Java.
+- Checking the resolved Java and PySpark versions shows which build actually runs.
+- The learning starter pins PySpark 3.5.3 to Python versions 3.10 through 3.12.
+- Upstream reference material can use older APIs than the pinned starter version.
+- A running application serves the Spark UI, so it is gone once Spark stops.

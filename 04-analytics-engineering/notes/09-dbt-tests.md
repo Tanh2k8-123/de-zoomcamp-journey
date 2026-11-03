@@ -1,22 +1,11 @@
-# Module 4 Unit 9 — dbt Tests
+# Module 4 Unit 9 - dbt Tests
 
-## Core ideas
-
-- Data tests query for violations: zero failing rows normally means PASS. Generic tests are reusable; singular tests express a specific rule in SQL.
-- Built-in generic tests include not_null, unique, accepted_values, and relationships. Relationships checks exclude NULL child keys, so add not_null when required.
-- Unit tests compare model logic against small fixtures; they still execute SQL through the adapter. Contracts check the output shape and declared types, with constraint support depending on the adapter.
-- Freshness compares a configured timestamp against recency thresholds. Historical taxi pickup dates do not measure current ingestion health.
-
-## Practice plan
-
-1. Review the existing data_tests in staging and marts schema files.
-2. Run dbt test --select dim_zones --indirect-selection cautious, then inspect a relationships test after fct_trips exists. Do not impose positive-fare rules without checking refunds and business definitions.
-
-## Understanding check
-
-How does a data FAIL differ from the missing-table ERROR encountered in Unit 6?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/04-analytics-engineering/09-dbt-tests.md)
-- [Lesson video](https://www.youtube.com/watch?v=bvZ-rJm7uMU)
+- Data tests query for violating rows and pass when they return none; a test never repairs data.
+- Generic tests are reusable and configured in YAML, while singular tests express one specific rule in their own SQL file.
+- Built-in generic tests include `not_null`, `unique`, `accepted_values`, and `relationships`.
+- `relationships` excludes NULL child keys, so add `not_null` when the foreign key is also mandatory.
+- Unit tests compare model logic against small fixtures but still execute SQL through the adapter.
+- Contracts check the output shape and declared column types, with constraint enforcement depending on the adapter.
+- Freshness compares a configured timestamp against recency thresholds, and historical taxi dates do not measure current ingestion health.
+- A FAIL means the test ran and found bad data, while an ERROR means it could not run, for example because a referenced table is missing.
+- Indirect test selection is separate from resource selection: eager includes a test when any parent is selected, cautious requires all parents.

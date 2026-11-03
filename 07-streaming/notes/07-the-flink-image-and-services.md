@@ -1,20 +1,9 @@
-# Module 7 Unit 7 — The Flink image and services
+# Module 7 Unit 7 - The Flink Image and Services
 
-## Core ideas
-
-- JobManager coordinates jobs; TaskManagers execute work. The image includes Python and connector libraries.
-- The working Dockerfile comes from the course snapshot; connector/runtime compatibility still needs runtime validation.
-- Compose defines local networking and mounts src into containers; it does not create a production cluster.
-
-## Practice plan
-
-1. Inspect Dockerfile.flink and docker-compose.yml.
-2. Build and start services only when ready, then inspect logs and the UI on port 8081.
-
-## Understanding check
-
-Why can Python code parse successfully while a Flink job fails to load a connector?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/07-streaming/07-the-flink-image-and-services.md)
+- The JobManager coordinates job execution while TaskManagers run the actual work.
+- The Flink image bundles Python together with the connector and runtime libraries the jobs need.
+- Compose defines local networking and mounts src into containers, which does not create a production cluster.
+- Python code can parse successfully while a Flink job fails, because connector loading happens at runtime.
+- A missing or incompatible connector JAR surfaces when the job graph is submitted and classloading runs.
+- The Dockerfile comes from the course snapshot, so connector and runtime compatibility still needs validation.
+- The Flink web UI listens on port 8081 in this local Compose setup.

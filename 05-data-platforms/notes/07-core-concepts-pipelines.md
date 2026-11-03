@@ -1,21 +1,9 @@
-# Module 5 Unit 7 — Core Concepts: Pipelines
+# Module 5 Unit 7 - Core Concepts: Pipelines
 
-## Core ideas
-
-- A pipeline groups assets with a shared schedule and configuration.
-- pipeline.yml names the pipeline and selects default connections. The dependency graph determines asset execution order.
-- A declared schedule describes timing, but a local CLI invocation alone is not an always-on scheduler.
-
-## Practice plan
-
-1. Inspect the starter pipeline.yml and its three-layer asset graph.
-2. Run bruin lineage ./pipeline/pipeline.yml from the starter root after installing the CLI.
-
-## Understanding check
-
-Why might hourly and monthly workloads belong in different pipelines?
-
-## References
-
-- [Course unit](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/8207266ca9fb30f0578cd5ffc4701cb8c3f7a52e/05-data-platforms/07-core-concepts-pipelines.md)
-- [Lesson video](https://www.youtube.com/watch?v=uzp_DiR4Sok)
+- A pipeline groups assets that share one schedule and one configuration.
+- `pipeline.yml` names the pipeline and selects its default connections.
+- The dependency graph, not the order of files, determines asset execution order.
+- A declared schedule only describes timing; a local CLI invocation is not an always-on scheduler.
+- The starter pipeline demonstrates a three-layer asset graph under a single definition.
+- Lineage output is how you inspect the graph a pipeline will actually execute.
+- Assets with different cadences, such as hourly and monthly work, fit separate pipelines better.
